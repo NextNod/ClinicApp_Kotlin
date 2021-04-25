@@ -8,6 +8,7 @@ class Data {
         private const val port = 801
         var selectedIndex = 0
         val lisDoc = mutableListOf<Doctors>()
+        val listDate = mutableListOf<String>()
         private var socket : Socket = Socket()
 
         data class Doctors(val ID : Int, val Name : String, val Description : String)

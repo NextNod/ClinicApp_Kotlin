@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val list : MutableList<String> = mutableListOf()
         val listDoc = findViewById<ListView>(R.id.listDoc)
-        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
         listDoc.adapter = adapter
 
         listDoc.setOnItemClickListener { _, _, position, _ ->
